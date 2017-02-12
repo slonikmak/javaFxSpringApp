@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox prefHeight="200.0" prefWidth="100.0" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.anton.javFxSpringApp.controllers.MainController">
+   <children>
+      <AnchorPane minHeight="80.0" prefHeight="80.0" prefWidth="200.0" VBox.vgrow="NEVER">
+         <children>
+            <fx:include source="header.fxml" />
+         </children>
+      </AnchorPane>
+      
+      <StackPane fx:id="taskContainer" maxHeight="1.7976931348623157E308" minHeight="300.0" prefHeight="440.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
+         <children>
+            <fx:include source="taskList.fxml" />
+         </children>
+      </StackPane>
+      <StackPane fx:id="controlContainer" minHeight="80.0" prefHeight="80.0" prefWidth="200.0" VBox.vgrow="NEVER">
+         <children>
+            <fx:include source="controls.fxml" />
+         </children>
+      </StackPane>
+   </children>
+</VBox>
