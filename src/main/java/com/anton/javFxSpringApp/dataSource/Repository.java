@@ -4,9 +4,12 @@ import com.anton.javFxSpringApp.models.TaskItem;
 import javafx.beans.Observable;
 import javafx.beans.property.ListProperty;
 import javafx.beans.property.SimpleListProperty;
+import javafx.beans.value.ChangeListener;
+import javafx.beans.value.ObservableValue;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.collections.transformation.FilteredList;
+import javafx.util.Callback;
 import org.springframework.stereotype.Component;
 
 /**

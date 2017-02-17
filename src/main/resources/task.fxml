@@ -6,16 +6,16 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="80.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.anton.javFxSpringApp.controllers.ItemController">
+<AnchorPane fx:id="taskContainer" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="80.0" prefWidth="400.0" styleClass="task-container" stylesheets="@jMetro.css" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.anton.javFxSpringApp.controllers.ItemController">
    <children>
-      <Label fx:id="taskHeader" layoutX="14.0" layoutY="11.0" text="Task Name" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="11.0">
+      <Label fx:id="taskHeader" layoutX="14.0" layoutY="11.0" styleClass="item-title" text="Task Name" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="11.0">
          <font>
             <Font size="24.0" />
          </font>
       </Label>
       <Label layoutX="14.0" layoutY="58.0" text="Status:" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="14.0" />
-      <Label fx:id="taskStatus" layoutX="59.0" layoutY="58.0" text="active" AnchorPane.bottomAnchor="5.0" />
-      <Button layoutX="334.0" layoutY="28.0" mnemonicParsing="false" onAction="#deleteTask" text="Delete" />
-      <CheckBox fx:id="complitedCheckBox" layoutX="251.0" layoutY="32.0" mnemonicParsing="false" text="complited" />
+      <Label fx:id="taskStatus" layoutX="66.0" layoutY="54.0" text="active" AnchorPane.bottomAnchor="5.0" />
+      <Button layoutX="300.0" layoutY="29.0" mnemonicParsing="false" onAction="#deleteTask" text="Delete" />
+      <CheckBox fx:id="complitedCheckBox" layoutX="208.0" layoutY="34.0" mnemonicParsing="false" text="complited" />
    </children>
 </AnchorPane>

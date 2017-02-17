@@ -2,6 +2,7 @@ package com.anton.javFxSpringApp.controllers;
 
 import com.anton.javFxSpringApp.dataSource.Repository;
 import com.anton.javFxSpringApp.models.TaskItem;
+import javafx.collections.ListChangeListener;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
@@ -26,6 +27,7 @@ public class MainController {
     @Autowired
     public void setRepository(Repository repository) {
         this.repository = repository;
+
     }
 
 

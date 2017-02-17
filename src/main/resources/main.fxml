@@ -1,23 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import java.lang.String?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.StackPane?>
 <?import javafx.scene.layout.VBox?>
 
-<VBox prefHeight="200.0" prefWidth="100.0" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.anton.javFxSpringApp.controllers.MainController">
+<VBox prefHeight="400.0" prefWidth="400.0" stylesheets="@jMetro.css" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.anton.javFxSpringApp.controllers.MainController">
    <children>
-      <AnchorPane minHeight="80.0" prefHeight="80.0" prefWidth="200.0" VBox.vgrow="NEVER">
+      <AnchorPane minHeight="80.0" prefHeight="80.0" prefWidth="400.0" VBox.vgrow="NEVER">
          <children>
             <fx:include source="header.fxml" />
          </children>
+         <styleClass>
+            <String fx:value="background" />
+            <String fx:value="value-pane" />
+         </styleClass>
       </AnchorPane>
       
-      <StackPane fx:id="taskContainer" maxHeight="1.7976931348623157E308" minHeight="300.0" prefHeight="440.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
+      <StackPane fx:id="taskContainer" maxHeight="1.7976931348623157E308" minHeight="300.0" prefHeight="440.0" prefWidth="400.0" VBox.vgrow="ALWAYS">
          <children>
             <fx:include source="taskList.fxml" />
          </children>
       </StackPane>
-      <StackPane fx:id="controlContainer" minHeight="80.0" prefHeight="80.0" prefWidth="200.0" VBox.vgrow="NEVER">
+      <StackPane fx:id="controlContainer" minHeight="80.0" prefHeight="80.0" prefWidth="400.0" styleClass="background" VBox.vgrow="NEVER">
          <children>
             <fx:include source="controls.fxml" />
          </children>
